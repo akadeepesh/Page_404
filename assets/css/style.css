@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Neue Machina';
+    src: url(../font/NeueMachina-Regular.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url(../font/NeueMachina-Ultrabold.woff);
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Neue Machina';
+}
+
+.max-width {
+    width: 1180px;
+
+}
+
+.full-width {
+    width: 100vw;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+
+    font-weight: bold;
+    padding: 20px;
+}
+
+.hero-section {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    column-gap: 4.5rem;
+    position: relative;
+
+}
+
+.image img {
+    width: 500px;
+    animation: motion 1s .5s infinite alternate ease-in-out;
+}
+@keyframes motion {
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes motion {
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    gap: 1.5rem;
+}
+
+.bad-news {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.desc {
+    width: 70%;
+}
+
+.text a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    background: #000000;
+    width: 180px;
+    border: 1px solid #000;
+    padding: 12px;
+    transition: all 0.5s ease;
+}
+
+.text a:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media screen and (max-width:970px) {
+    .image img {
+        width: 400px;
+    }
+
+    .bad-news {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width:855px) {
+    .image img {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width:755px) {
+    .hero-section {
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 200px;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc {
+        width: 50%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .bad-news {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .hero-section {
+        margin-top: 70px;
+
+    }
+
+    .bad-news {
+        font-size: 1.5rem;
+
+    }
+
+    .text a {
+        padding: 8px;
+        width: 150px;
+        font-size: small;
+    }
+
+}
